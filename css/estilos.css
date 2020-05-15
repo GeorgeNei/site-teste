@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/fundo.img');
+  background-size: auto 100vh;
+  height: 100vh;
+  font-size: 10;
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+header {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: teal;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menu a:active,
+.menu a:hover {
+  background-color: teal;
+  color: white;
+}
+
+.site-title {
+  color: #000000;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+}
+
+.site-subtitle {
+  color: #000000;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Courgette', cursive;
+}
+
+.img-serviços {
+  height: 180px;
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.legendas {
+  font-style: italic;
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
+}
+
+.serviços h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+a:hover {
+  text-decoration: overline;
+}
+
+.serviços figure {
+  text-align: center;
+}
+
+.serviços .grid {
+  display: grid;
+
+}
+
+@media (min-width: 900px) {
+  .serviços .grid {
+  grid-template-columns: 300px 600px;
+  justify-content: center;
+  }
+}
+
+.contato h2 {
+  text-align: center;
+  margin: 40px 20px 60px 20px;
+}
+
+.contato {
+  height: 50vw;
+}
+
+.contato a {
+  color: blueviolet;
+  font-size: 8em;
+  margin: 15px;
+}
+
+.contato a:hover {
+  text-decoration: none;
+  text-align: center;
+}
+
+.grid-itens {
+  text-align: center;
+}
